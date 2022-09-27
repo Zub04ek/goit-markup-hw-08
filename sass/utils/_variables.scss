@@ -1,0 +1,31 @@
+$basic-font-family: Roboto, sans-serif;
+$logo-font-family: 'Raleway';
+$logo-up-color: #000000;
+$basic-text-color: #212121;
+$secondary-text-color: #757575;
+$accent-color: #2196F3;
+$primary-white-color: #FFFFFF;
+$background-color: #F5F5F5;
+$hero-background-color: #C4C4C4;
+$team-background-color: #F5F4FA;
+$footer-background-color: #2F303A;
+$contacts-color: #AFB1B8;
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$register-form-button: #188CE8;
+@mixin list-display {
+    display: flex;
+}
+@mixin list-title($fw: 700, $fs: 14px, $lh: 16px, $ls: 0.03em, $tt: uppercase) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh / $fs;
+    letter-spacing: $ls;
+    text-transform: $tt;
+}
+@mixin section-title($fw: 700, $fs: 36px, $lh: 42px, $ls: 0.03em, $ta: center) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh / $fs;
+    letter-spacing: $ls;
+    text-align: $ta;
+}

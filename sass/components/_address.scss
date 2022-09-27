@@ -1,0 +1,24 @@
+.address {
+    font-style: normal;
+}
+
+.address__item {
+    margin-bottom: 9px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.address__map {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primary-white-color;
+}
+
+.address__link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}

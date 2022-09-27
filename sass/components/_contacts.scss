@@ -1,0 +1,31 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.contacts__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $primary-white-color;
+    transition: background-color $animation;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.contacts__icon {
+    fill: $contacts-color;
+    transition: fill $animation;
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+        fill: $primary-white-color;
+    }
+}
+

@@ -1,0 +1,18 @@
+.logo {
+    font-family: $logo-font-family;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    &__web {
+            color: $accent-color;
+        }
+    &--up {
+        color: $logo-up-color;
+    }
+    &--down {
+        color: $primary-white-color;
+    }
+    &--bottom {
+        margin-bottom: 20px;
+    }
+}

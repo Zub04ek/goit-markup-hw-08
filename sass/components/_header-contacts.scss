@@ -1,0 +1,25 @@
+.header__list {
+    margin-left: auto;
+}
+
+.header__item+.header__item {
+    margin-left: 50px;
+}
+
+.header__link {
+    color: $secondary-text-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: color $animation;
+    &:hover, &:focus {
+        color: $accent-color;
+        }
+}
+
+.header__icon {
+    fill: currentColor;
+}

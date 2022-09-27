@@ -1,0 +1,33 @@
+.social {
+    margin-left: 70px;
+}
+
+.social__title {
+    @include list-title;
+    margin-bottom: 20px;
+    color: $primary-white-color;
+}
+
+.social__list {
+    @include list-display;
+    gap: 10px;
+}
+
+.social__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color $animation;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.social__icon {
+    fill: $primary-white-color;
+}
