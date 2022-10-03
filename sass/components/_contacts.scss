@@ -2,7 +2,12 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 30px;
+    @media screen and (max-width: ($desktop - 0.02)) {
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 30px;
+    }
 }
 
 .contacts__link {

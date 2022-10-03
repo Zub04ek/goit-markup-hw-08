@@ -1,12 +1,18 @@
 .benefits__list {
     @include list-display;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .benefits__item {
-    width: 270px;
-    margin-right: 30px;
-    &:last-child {
-        margin-right: 0;
+    width: 450px;
+
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
+        width: calc((100% - 30px)/2);
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 3*30px)/4);
     }
 }
 
@@ -21,6 +27,9 @@
 
 .benefits__title {
     @include list-title;
+    @media screen and (max-width: ($tablet - 0.02)) {
+        text-align: center;
+    }
 }
 
 .benefits__desc {

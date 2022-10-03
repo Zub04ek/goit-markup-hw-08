@@ -1,5 +1,17 @@
+.nav {
+    @media screen and (max-width: ($tablet - 0.02)) {
+        display: none;
+    }
+}
+
 .nav__list {
-    margin-left: 93px;
+    @media screen and (min-width: $tablet) {
+        margin-left: 87px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 93px;
+    }
 }
 
 .nav__item+.nav__item {

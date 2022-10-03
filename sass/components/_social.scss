@@ -1,5 +1,7 @@
 .social {
-    margin-left: 70px;
+    @media screen and (min-width: $desktop) {
+        margin-left: 70px;
+    }
 }
 
 .social__title {

@@ -2,10 +2,18 @@
     font-style: normal;
 }
 
-.address__item {
-    margin-bottom: 9px;
-    &:last-child {
-        margin-bottom: 0;
+.address__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    @media screen and (max-width: ($tablet - 0.02)) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        align-items: flex-start;
+        gap: 9px;
     }
 }
 

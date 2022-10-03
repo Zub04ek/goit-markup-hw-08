@@ -1,5 +1,8 @@
 .directions.section {
     padding-top: 0;
+    @media screen and (max-width: ($desktop - 0.02)) {
+        display: none;
+    }
 }
 
 .directions__list {

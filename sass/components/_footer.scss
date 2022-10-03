@@ -6,5 +6,32 @@
 
 .footer__container {
     display: flex;
-    align-items: baseline;
+    
+    @media screen and (max-width: ($tablet - 0.02)) {
+        align-items: center;
+    }
+
+    @media screen and (max-width: ($desktop - 0.02)) {
+        flex-direction: column;
+        gap: 60px;
+        text-align: center;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        align-items: baseline;
+    }
+}
+
+.footer-base {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.info {
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
+        margin-left: 61px;
+        margin-right: 165px;
+    }
 }

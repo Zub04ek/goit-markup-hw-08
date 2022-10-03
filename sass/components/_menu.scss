@@ -1,0 +1,154 @@
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-left: auto;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    
+    background-color: $primary-white-color;
+
+    transform: translateX(100%);
+    transition: transform $animation;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    @media screen and (max-width: ($mobile - 0.02)) {
+        padding: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-icon {
+    fill: currentColor;
+    transition: fill $animation;
+    
+    .menu-toggle:hover &,
+    .menu-toggle:focus & {
+        fill: $accent-color;
+    }
+}
+
+.mobile-menu {
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mobile-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $basic-text-color;
+    transition: color $animation;
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+    &.current {
+        color: $accent-color;
+    }
+    @media screen and (max-width: ($mobile - 0.02)) {
+        font-size: 30px;
+    }
+}
+
+.menu-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.menu-contacts__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    @media screen and (max-width: ($mobile - 0.02)) {
+        font-size: 24px;
+    }
+}
+
+.menu-contacts__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+    @media screen and (max-width: ($mobile - 0.02)) {
+        font-size: 18px;
+    }
+}
+
+.mobile-socials {
+    display: flex;
+    margin-top: 64px;
+    gap: 20px;
+    position: relative;
+}
+
+.mobile-socials__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    @media screen and (max-width: ($mobile - 0.02)) {
+        font-size: 12px;
+    }
+}
+.line::after {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    display: inline-block;
+    width: 22px;
+    height: 1px;
+    background-color: rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+}
